@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C65AE2DB25CA7112EB0560 /* Pods_WunderChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99E94D278420B2082415E6B /* Pods_WunderChallengeTests.framework */; };
+		11AE5CC98E59735A7F33B56E /* Pods_WunderChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3BB04B18B1D5859F555942 /* Pods_WunderChallenge.framework */; };
 		C113B6C323413E6B008C673F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6C223413E6B008C673F /* AppDelegate.swift */; };
-		C113B6C523413E6B008C673F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6C423413E6B008C673F /* ViewController.swift */; };
+		C113B6C523413E6B008C673F /* CarListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6C423413E6B008C673F /* CarListController.swift */; };
 		C113B6C823413E6B008C673F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C113B6C623413E6B008C673F /* Main.storyboard */; };
 		C113B6CB23413E6B008C673F /* WunderChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C113B6C923413E6B008C673F /* WunderChallenge.xcdatamodeld */; };
 		C113B6CD23413E6C008C673F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C113B6CC23413E6C008C673F /* Assets.xcassets */; };
 		C113B6D023413E6C008C673F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C113B6CE23413E6C008C673F /* LaunchScreen.storyboard */; };
 		C113B6DB23413E6C008C673F /* WunderChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6DA23413E6C008C673F /* WunderChallengeTests.swift */; };
+		C113B6EB23414386008C673F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6EA23414386008C673F /* Car.swift */; };
+		C113B6EC23414386008C673F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6EA23414386008C673F /* Car.swift */; };
+		C113B6ED2341438A008C673F /* CarListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6C423413E6B008C673F /* CarListController.swift */; };
+		C113B6EF23414A94008C673F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6EE23414A94008C673F /* Keys.swift */; };
+		C113B6F023414A94008C673F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6EE23414A94008C673F /* Keys.swift */; };
+		C113B6F223414FD0008C673F /* MapsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6F123414FD0008C673F /* MapsController.swift */; };
+		C113B6F323414FD0008C673F /* MapsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113B6F123414FD0008C673F /* MapsController.swift */; };
+		C197412B23415AA70072DE53 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197412A23415AA70072DE53 /* Artwork.swift */; };
+		C197412C23415AA70072DE53 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197412A23415AA70072DE53 /* Artwork.swift */; };
+		C19741322341E66F0072DE53 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19741312341E66F0072DE53 /* CarCell.swift */; };
+		C19741332341E66F0072DE53 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19741312341E66F0072DE53 /* CarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3BB04B18B1D5859F555942 /* Pods_WunderChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WunderChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C4CED7D768C4CC00603106 /* Pods-WunderChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WunderChallengeTests/Pods-WunderChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EE7EF14EDF77E5A01362B0F /* Pods-WunderChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WunderChallenge/Pods-WunderChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		9AB7125E15730DBAAF9CF817 /* Pods-WunderChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WunderChallenge/Pods-WunderChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		C113B6BF23413E6B008C673F /* WunderChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WunderChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C113B6C223413E6B008C673F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C113B6C423413E6B008C673F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C113B6C423413E6B008C673F /* CarListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListController.swift; sourceTree = "<group>"; };
 		C113B6C723413E6B008C673F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C113B6CA23413E6B008C673F /* WunderChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WunderChallenge.xcdatamodel; sourceTree = "<group>"; };
 		C113B6CC23413E6C008C673F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +55,13 @@
 		C113B6D623413E6C008C673F /* WunderChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WunderChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C113B6DA23413E6C008C673F /* WunderChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderChallengeTests.swift; sourceTree = "<group>"; };
 		C113B6DC23413E6C008C673F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C113B6EA23414386008C673F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		C113B6EE23414A94008C673F /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		C113B6F123414FD0008C673F /* MapsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsController.swift; sourceTree = "<group>"; };
+		C197412A23415AA70072DE53 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		C19741312341E66F0072DE53 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		CC88F66165E79EF61D2CFDDB /* Pods-WunderChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WunderChallengeTests/Pods-WunderChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D99E94D278420B2082415E6B /* Pods_WunderChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WunderChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AE5CC98E59735A7F33B56E /* Pods_WunderChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +77,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C65AE2DB25CA7112EB0560 /* Pods_WunderChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C08E5408F4988D1E51013D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EE7EF14EDF77E5A01362B0F /* Pods-WunderChallenge.debug.xcconfig */,
+				9AB7125E15730DBAAF9CF817 /* Pods-WunderChallenge.release.xcconfig */,
+				26C4CED7D768C4CC00603106 /* Pods-WunderChallengeTests.debug.xcconfig */,
+				CC88F66165E79EF61D2CFDDB /* Pods-WunderChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5BE671E681C43FD4C948F323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A3BB04B18B1D5859F555942 /* Pods_WunderChallenge.framework */,
+				D99E94D278420B2082415E6B /* Pods_WunderChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C113B6B623413E6B008C673F = {
 			isa = PBXGroup;
 			children = (
 				C113B6C123413E6B008C673F /* WunderChallenge */,
 				C113B6D923413E6C008C673F /* WunderChallengeTests */,
 				C113B6C023413E6B008C673F /* Products */,
+				2C08E5408F4988D1E51013D0 /* Pods */,
+				5BE671E681C43FD4C948F323 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +127,16 @@
 		C113B6C123413E6B008C673F /* WunderChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				C197412D2341E61E0072DE53 /* Cells */,
+				C113B6E923414370008C673F /* Models */,
 				C113B6C223413E6B008C673F /* AppDelegate.swift */,
-				C113B6C423413E6B008C673F /* ViewController.swift */,
+				C113B6E82341417D008C673F /* Controllers */,
 				C113B6C623413E6B008C673F /* Main.storyboard */,
 				C113B6CC23413E6C008C673F /* Assets.xcassets */,
 				C113B6CE23413E6C008C673F /* LaunchScreen.storyboard */,
 				C113B6D123413E6C008C673F /* Info.plist */,
 				C113B6C923413E6B008C673F /* WunderChallenge.xcdatamodeld */,
+				C113B6EE23414A94008C673F /* Keys.swift */,
 			);
 			path = WunderChallenge;
 			sourceTree = "<group>";
@@ -99,6 +150,32 @@
 			path = WunderChallengeTests;
 			sourceTree = "<group>";
 		};
+		C113B6E82341417D008C673F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C113B6C423413E6B008C673F /* CarListController.swift */,
+				C113B6F123414FD0008C673F /* MapsController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C113B6E923414370008C673F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C113B6EA23414386008C673F /* Car.swift */,
+				C197412A23415AA70072DE53 /* Artwork.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C197412D2341E61E0072DE53 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C19741312341E66F0072DE53 /* CarCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C113B6DF23413E6C008C673F /* Build configuration list for PBXNativeTarget "WunderChallenge" */;
 			buildPhases = (
+				088F97AB5DB0887AB5F34525 /* [CP] Check Pods Manifest.lock */,
 				C113B6BB23413E6B008C673F /* Sources */,
 				C113B6BC23413E6B008C673F /* Frameworks */,
 				C113B6BD23413E6B008C673F /* Resources */,
+				12A19087C785DE252B66356C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C113B6E223413E6C008C673F /* Build configuration list for PBXNativeTarget "WunderChallengeTests" */;
 			buildPhases = (
+				C7504A0F5A50911CB1BFCABA /* [CP] Check Pods Manifest.lock */,
 				C113B6D223413E6C008C673F /* Sources */,
 				C113B6D323413E6C008C673F /* Frameworks */,
 				C113B6D423413E6C008C673F /* Resources */,
@@ -195,14 +275,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		088F97AB5DB0887AB5F34525 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WunderChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12A19087C785DE252B66356C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WunderChallenge/Pods-WunderChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EmptyKit/EmptyKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmptyKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WunderChallenge/Pods-WunderChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7504A0F5A50911CB1BFCABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WunderChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C113B6BB23413E6B008C673F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C113B6C523413E6B008C673F /* ViewController.swift in Sources */,
+				C113B6C523413E6B008C673F /* CarListController.swift in Sources */,
 				C113B6C323413E6B008C673F /* AppDelegate.swift in Sources */,
+				C197412B23415AA70072DE53 /* Artwork.swift in Sources */,
+				C113B6F223414FD0008C673F /* MapsController.swift in Sources */,
+				C113B6EB23414386008C673F /* Car.swift in Sources */,
 				C113B6CB23413E6B008C673F /* WunderChallenge.xcdatamodeld in Sources */,
+				C19741322341E66F0072DE53 /* CarCell.swift in Sources */,
+				C113B6EF23414A94008C673F /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +358,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C113B6EC23414386008C673F /* Car.swift in Sources */,
+				C113B6F023414A94008C673F /* Keys.swift in Sources */,
 				C113B6DB23413E6C008C673F /* WunderChallengeTests.swift in Sources */,
+				C113B6ED2341438A008C673F /* CarListController.swift in Sources */,
+				C197412C23415AA70072DE53 /* Artwork.swift in Sources */,
+				C19741332341E66F0072DE53 /* CarCell.swift in Sources */,
+				C113B6F323414FD0008C673F /* MapsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +516,7 @@
 		};
 		C113B6E023413E6C008C673F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EE7EF14EDF77E5A01362B0F /* Pods-WunderChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +535,7 @@
 		};
 		C113B6E123413E6C008C673F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB7125E15730DBAAF9CF817 /* Pods-WunderChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +554,7 @@
 		};
 		C113B6E323413E6C008C673F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26C4CED7D768C4CC00603106 /* Pods-WunderChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +576,7 @@
 		};
 		C113B6E423413E6C008C673F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC88F66165E79EF61D2CFDDB /* Pods-WunderChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
