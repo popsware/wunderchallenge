@@ -64,10 +64,14 @@ class MapsController: UIViewController {
         {
             try self.addCarMarker(car)
             centerCoordinates = self.calculateCenter(location1: centerCoordinates, location2: try car.getCoordinates())
+            
+            //TODO: get maxLatitude, maxLangitude, minLatitude, minLangitude
         }
         
         if let centerCoordinates = centerCoordinates
         {
+            //TODO: calculate regionRadius from max,max,min,min
+            //TODO: get the avg of max and min to get center Coordinates
             self.centerMapOnLocation(location: centerCoordinates, regionRadius: 10000)
         }
         else{
@@ -81,6 +85,17 @@ class MapsController: UIViewController {
     func centerMapOnLocation(location: CLLocation, regionRadius: CLLocationDistance) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    func getRegionRadius( lat1: Float, lng1: Float, lat2: Float, lng2: Float) -> Float {
+        let earthRadius: Float = 6371000; //meters
+        let dLat = lat2-lat1
+        let dLng = lng2-lng1
+        let a = sin(dLat/2) * sin(dLat/2) + cos(lat1) * cos(lat2) * sin(dLng/2) * sin(dLng/2)
+        let c = 2 * atan2((a).squareRoot(), (1-a).squareRoot())
+        let dist = earthRadius * c
+
+        return dist
     }
     
     ///adds a marker to the map
